@@ -6,11 +6,11 @@ export default function HomePage() {
   return (
     <main className="py-8 sm:py-10 lg:py-14">
       <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <header className="mb-8 sm:mb-10">
+        <header className="flex flex-col items-center justify-center py-6">
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
             OneVape
           </h1>
-          <p className="mt-3 max-w-2xl text-sm text-neutral-600 sm:text-base">
+          <p className="mt-3 max-w-2xl text-sm text-neutral-200 sm:text-base">
             Выберите категорию и перейдите в каталог.
           </p>
         </header>
@@ -20,7 +20,7 @@ export default function HomePage() {
             <Link
               key={category.slug}
               href={`/categories/${category.slug}`}
-              className="group block overflow-hidden rounded-3xl border border-black/10 bg-white"
+              className="group block overflow-hidden rounded-3xl border border-black/10 bg-black"
             >
               <div className="relative aspect-4/5 w-full bg-neutral-100">
                 <Image
@@ -34,7 +34,7 @@ export default function HomePage() {
 
               <div className="p-4 sm:p-5">
                 <h2 className="text-lg font-medium sm:text-xl">{category.name}</h2>
-                <p className="mt-1 text-sm text-neutral-600">{category.description}</p>
+                <p className="mt-1 text-sm text-neutral-300">{category.description}</p>
               </div>
             </Link>
           ))}

@@ -3,19 +3,19 @@ import type { Categories } from './types'
 export const categ: Categories[] = [
   {
     slug: 'vape',
-    name: 'Vape',
-    image: '/ad.jpg',
-    description: 'Вейп',
+    name: 'Вейп',
+    image: '/e.jpg',
+    description: '1',
     products: [
       {
         id: 'vape-1',
-        title: 'Air Max 90',
+        title: '1',
         price: 500,
         image: '/add.jpg',
       },
       {
         id: 'vape-2',
-        title: 'Dunk Low',
+        title: '2',
         price: 600,
         image: '/ad.jpg',
       },
@@ -23,9 +23,17 @@ export const categ: Categories[] = [
   },
   {
     slug: 'snus',
-    name: 'Snus',
-    image: '/add.jpg',
-    description: 'snus',
+    name: 'Снюс',
+    image: '/s.jpg',
+    description: '2',
+    products: [],
+  },
+
+    {
+    slug: 'pour',
+    name: 'Жижа',
+    image: '/pp.jpg',
+    description: '3',
     products: [],
   },
 ]

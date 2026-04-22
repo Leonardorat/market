@@ -7,7 +7,7 @@ export default function HomePage() {
     <main className="py-8 sm:py-10 lg:py-14">
       <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <header className="flex flex-col items-center justify-center py-6">
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl text-neutral-100">
             OneVape
           </h1>
           <p className="mt-3 max-w-2xl text-sm text-neutral-200 sm:text-base">
@@ -33,8 +33,8 @@ export default function HomePage() {
               </div>
 
               <div className="p-4 sm:p-5">
-                <h2 className="text-lg font-medium sm:text-xl">{category.name}</h2>
-                <p className="mt-1 text-sm text-neutral-300">{category.description}</p>
+                <h2 className="text-lg  text-neutral-100 font-medium sm:text-xl">{category.name}</h2>
+                <p className="mt-1 text-sm text-neutral-100">{category.description}</p>
               </div>
             </Link>
           ))}

@@ -21,7 +21,7 @@ export default async function CategoryPage({ params }: Props) {
       <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <header className="mb-8 flex items-start justify-between">
           <div>
-            <p className="text-sm text-neutral-300">Категория</p>
+            <p className="text-sm text-neutral-100">Категория</p>
             <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
               {category.name}
             </h1>
@@ -41,7 +41,7 @@ export default async function CategoryPage({ params }: Props) {
           {category.products.map((product) => (
             <article
               key={product.id}
-              className="overflow-hidden rounded-2xl border border-black/10 bg-black"
+              className="overflow-hidden rounded-2xl  border-black/10 bg-black "
             >
               <div className="relative aspect-square bg-neutral-500">
                 <Image

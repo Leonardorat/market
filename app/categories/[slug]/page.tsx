@@ -32,7 +32,7 @@ export default async function CategoryPage({ params }: Props) {
 
           <div className="text-right">
             <p className="text-2xl text-neutral-100">
-              Заказать: 📞+79958458365 📱https://t.me/One1Vape
+              Заказать: +79958458365 https://t.me/One1Vape
             </p>
           </div>
         </header>

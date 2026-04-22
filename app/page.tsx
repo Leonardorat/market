@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { categ } from '@/lib/data'
+import { categories } from '@/lib/data'
 
 export default function HomePage() {
   return (
@@ -16,7 +16,7 @@ export default function HomePage() {
         </header>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {categ.map((category) => (
+          {categories.map((category) => (
             <Link
               key={category.slug}
               href={`/categories/${category.slug}`}

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { categ } from "@/lib/data";
+import { categories } from "@/lib/data";
 
 type Props = {
   params: Promise<{
@@ -10,7 +10,7 @@ type Props = {
 
 export default async function CategoryPage({ params }: Props) {
   const { slug } = await params;
-  const category = categ.find((item) => item.slug === slug);
+  const category = categories.find((item) => item.slug === slug);
 
   if (!category) {
     notFound();

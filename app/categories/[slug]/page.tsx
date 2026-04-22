@@ -31,7 +31,7 @@ export default async function CategoryPage({ params }: Props) {
           </div>
 
           <div className="text-right">
-            <p className="text-2xl text-neutral-100">
+            <p className="text-1xl text-neutral-100">
               Заказать: +79958458365 https://t.me/One1Vape
             </p>
           </div>
